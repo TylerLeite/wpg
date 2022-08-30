@@ -1,0 +1,88 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --white: #ffffff;
+  --white-soft: #f8f8f8;
+  --white-mute: #f2f2f2;
+
+  --black: #000000;
+  --black-soft: #030303;
+
+  --gray-light: #c9c9c9;
+  --gray: #999;
+  
+  --green: #00bd7e;
+  --green-alpha: #00bd7e33;
+
+  --blue: #32aeef;
+  --red: #bd2345;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--white);
+
+  --color-heading: var(--black);
+  --color-text: var(--black-soft);
+}
+
+@media (prefers-color-scheme: dark) {}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: monospace;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 24px;
+  border: 2px solid var(--green);
+  border-radius: 2px;
+  background: white;
+  margin-top: 10px;
+  padding: 5px 8px;
+}
+
+button:active {
+  background: var(--green-alpha);
+}

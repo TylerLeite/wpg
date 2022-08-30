@@ -1,0 +1,28 @@
+placements clear @ turn end
+live update placements on map page
+-> live update next-turn resources
+make sure placements are properly hooked up with end turn button
+
+warning when you aren't producing enough food
+-> or too much research?
+
+next turn -> deltas, calculate value on the fly
+-> take into account food eaten
+
+ability to convert food into villagers
+mana sauna
+real estate market, job market: don't require workers
+
+randomized crop yield
+natural disasters
+
+oracle working
+
+save state when you end turn (or phase?)
+-> autoload on refresh
+
+-> trade increasingly important to grow exponentially
+
+actually draw map?
+
+risk style -> assign units to each city to defend against potential invasions, or launch invasions of your own
